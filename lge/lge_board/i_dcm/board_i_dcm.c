@@ -86,7 +86,7 @@
 #include "devices.h"
 #include "devices_i_dcm.h"
 #include <mach/cpuidle.h>
-#include "pm.h"
+#include <mach/pm.h>
 #include "mpm.h"
 #include "spm.h"
 #include "rpm_log.h"
@@ -3684,8 +3684,7 @@ static struct pm8xxx_keypad_platform_data i_dcm_keypad_data = {
 
 static struct pm8xxx_rtc_platform_data pm8058_rtc_pdata = {
 /* by nekomimip@nic 2012.Sep.10 for cyanogenmod */
-//	.rtc_write_enable = false,
-	.rtc_write_enable = true,
+	.rtc_write_enable = false,
 	.rtc_alarm_powerup = false,
 };
 
